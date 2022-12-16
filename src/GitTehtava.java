@@ -3,10 +3,15 @@ public class GitTehtava {
 
 	public static void main(String[] args) {
 		
-
+	Dishwasher pesukone = new Dishwasher(1,true);
+		
+		pesukone.setProgramme(3);
+		System.out.println(pesukone.getIsOn());
 	}
 
-}//
+	
+
+}// Mainin lopetus
 
 class Dishwasher
 {
