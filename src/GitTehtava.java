@@ -25,6 +25,7 @@ class Dishwasher
 	
 	programme = 0;
 	isOn=false;
+	printData();
 	
 }
 
@@ -33,6 +34,7 @@ class Dishwasher
 	{
 		isOn = false;
 		programme = chosenone;
+		printData();
 		
 		
 	}
@@ -41,6 +43,45 @@ class Dishwasher
 	{
 		programme = chosenone;
 		isOn = turnOnOff;
+		printData();
 	
 	}
-}
+	
+	// metodit
+	
+		public void setProgramme (int program)
+		{
+			if (program == 1)
+			{
+				System.out.println("Normal");
+			}
+			else if (program == 2)
+			{
+				System.out.println("Auto");
+			}
+			else
+			{
+				System.out.println("Intensive");
+			}
+		}
+		
+		private void printData()
+		{
+			System.out.println("Is the dishwasher on: " + isOn);
+			System.out.println("Programme: " + programme);
+		}
+		
+		public void turnOnOff()
+		{
+			if (isOn)
+			{
+				isOn = false;
+			}
+			else
+			{
+				isOn=true;
+			}
+			}
+			
+		}
+
